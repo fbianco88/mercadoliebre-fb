@@ -6,26 +6,53 @@
 body {
     font-family: 'Roboto', sans-serif;}
 
+    /*header*/
+    .logoML {
+        width: 200px
+    }
     header{
 background-color: #EAC926;
 width: 100vw;
 }
-header .buscador p {
+.buscador {
+    display: flex;
+    flex-direction: row;
+}
+.lupa {
+    background-color: #EAC926;
+    width: 10vw;
+}
+.barra-buscador {
     background-color: #fff;
     border: 1px solid #000;
     color: #666;
-    text-align: left;         
+    text-align: center;
+    width: 40%;
+    font-size: 3vw;
+    margin-left: 2px;
 }
 
 header .buscador i {
     background-color: #fff;
-    border: 1px solid #000;  
+    border: 1px solid #000;
+    margin-left: 2px;
+    padding: 1px; 
 }
-header p {
+.barra-cuotas {
+    display: flex;
+    flex-direction: row;
     text-align: center;
+    align-items: center;
+    vertical-align: center;
+    margin-top: 10px;
+}
+.barra-cuotas i {
+    width: 10vw;
+}
+.barra-cuotas-text {
+    font-size: 4vw;
 }
 header nav ul li  {
-    
     list-style-type: none;
 }
 header nav ul {
@@ -40,14 +67,17 @@ header nav ul li a {
 header div.burger-menu i {
     color: #fff;
     background-color: #1259c3;
-    font-size: 20px;
-    padding: 10px;
-    margin: 10px 0px 20px 0px;
+    font-size: 16px;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 5px;
 }
 
 header div.burger-menu {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header nav {
@@ -126,6 +156,7 @@ main section article div i {
     width: 30px ;
     height: 30px ;
     border: 1px solid #39b54a ;
+    color: #39b54a;
     background-color: #FFF ;
     border-radius: 50% ;
     position: absolute ;
@@ -136,6 +167,10 @@ main section article div i {
 
 .desc-prod {
     display: none;
+}
+
+.bloques-footer {
+    margin-bottom: 15px;
 }
 
 @media (min-width: 361px) {
