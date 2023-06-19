@@ -1,0 +1,51 @@
+#formulario-registro {
+background-color: #ebebeb ;
+}
+.formularios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    background-color:  #ebebeb;
+}
+
+form div {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.text-field {
+    padding: 5px;
+    
+}
+.intereses-check {
+    display: flex;
+    flex-direction: column;
+}
+
+.botonform {
+width:40%;
+border-radius: 5px
+}
+.botonsubmit {
+background-color: #1259c3;
+color: #fff
+}
+.botonreset {
+background-color: red;
+color: #fff;
+}
+.botonform:hover {
+background-color: #0022AA;
+}
+.logincampo {
+    width: 100%;
+    border-radius: 10%
+}
+.logincampo input {
+    width: 40%;
+}
+footer {
+    background-color: white;
+}

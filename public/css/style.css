@@ -1,3 +1,4 @@
+@import url(register.css);
 *{
     margin: 0px;
     padding: 0px;
@@ -8,28 +9,40 @@ body {
 
     /*header*/
     .logoML {
-        width: 200px
+        width: 50%;
+        padding: 10px
     }
     header{
 background-color: #EAC926;
 width: 100vw;
 }
+
+
+.logo-buscador {
+display: flex;
+flex-wrap: wrap;
+padding: 5%;
+justify-content: space-around;
+}
+
+
+
 .buscador {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    padding: 20px
 }
-.lupa {
-    background-color: #EAC926;
-    width: 10vw;
-}
+
 .barra-buscador {
     background-color: #fff;
     border: 1px solid #000;
+    border-radius: 5%;
     color: #666;
     text-align: center;
-    width: 40%;
-    font-size: 3vw;
-    margin-left: 2px;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 header .buscador i {
@@ -37,26 +50,28 @@ header .buscador i {
     border: 1px solid #000;
     margin-left: 2px;
     padding: 1px; 
+    height: 20px;
+    
 }
+
 .barra-cuotas {
     display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    vertical-align: center;
-    margin-top: 10px;
+    justify-content: center;
 }
 .barra-cuotas i {
     width: 10vw;
 }
 .barra-cuotas-text {
-    font-size: 4vw;
+    font-size: 16px;
 }
 header nav ul li  {
     list-style-type: none;
 }
 header nav ul {
     margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 42%;
 }
 header nav ul li a {
     color: #000;
@@ -87,6 +102,7 @@ header nav {
 main section article  div p.precio {
     font-size: 18px;
     width:30%;
+
  }
 
  main section article div p.descuentos {
@@ -116,6 +132,7 @@ footer p {
 footer i {
     color:#1259c3;
     size: 2em;
+    margin-bottom: 10px;
 }
 
 footer section p.copyright {
@@ -128,8 +145,8 @@ main {
     width: 100vw
 }
 
-main img {
-    width:100vw;
+main section article img  {
+    width: 100%;
 }
 .banner {
     width: 100vw;
@@ -137,7 +154,7 @@ main img {
 
 main section article {
     margin-bottom: 10px;
-    
+    transition: all 0.3s;
 }
 
 .info-producto {
@@ -162,33 +179,73 @@ main section article div i {
     position: absolute ;
     right:20px;
     top:-15px;
+    transition: all 0.3s;
 }
 
 
 .desc-prod {
     display: none;
+    
 }
 
 .bloques-footer {
     margin-bottom: 15px;
+    
 }
+
 
 @media (min-width: 361px) {
         .desc-prod {
             display: block;
         }
+        .productos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+        }
         main section article {
-            box-shadow: 0px 0px 10px rgb ( 100 , 100 , 100 );
+            width: 45%;
         }
         header div.burger-menu{
             display: none;
         }
         header nav{
-            display: block
+            display: flex;
+            justify-content: space-between;
+
         }
 
     }
 @media (min-width: 769px  ){
-        
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
     }
-    
+    main section article {
+        width: 22.5%;
+    }
+    .desc-prod {
+        display: none;
+    }
+    article:hover .desc-prod {
+        display: block;
+       }
+    article:hover {
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+    article:hover i {
+        transform: rotate(-90deg);
+    }
+    .anuncios {
+        display: flex;
+    }
+
+    footer section:hover  i {
+        color: #39b54a
+    } 
+
+    }
+  
